@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="accadius.ben.sabwa.jah"
+      android:versionCode="1"
+      android:versionName="0.9.4">
+    <uses-sdk android:minSdkVersion="8" />
+   <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" ></uses-permission>
+    <application android:icon="@drawable/eagc" android:label="@string/app_name"
+    android:debuggable="true"
+    >
+    
+        <activity android:name=".Splash"
+        		android:label="RATIN:YE">
+        		
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+			
+         <activity android:name=".Cereals"  android:label="RATIN_YE">
+            <intent-filter>
+                <action android:name="accadius.ben.sabwa.jah.Cereals" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+ 
+    </application>
+ 
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"  
+    android:background="@drawable/backgnd">
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content">
+ </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.11">
+        <TextView android:layout_width="wrap_content" android:textColor="@color/TextRangi2" android:text="Warehouse Data" android:layout_height="wrap_content" android:id="@+id/text" android:textSize="20sp" android:layout_marginTop="10dp" android:typeface="sans"></TextView>
+    </LinearLayout>
+     <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+     <TextView android:id="@+id/TextView03" android:textSize="20sp"  android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Select Grain" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_height="38dp" android:layout_weight="0.44"></TextView>
+     <Spinner android:layout_width="139dp" android:layout_gravity="right" android:id="@+id/spinner_grain" android:layout_height="wrap_content" android:layout_weight="0.42"></Spinner>
+    </LinearLayout>
+       <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+      <RadioGroup
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<RadioButton
+android:id="@+id/in"
+android:textColor="@color/TextRangi2"
+ android:textSize="20sp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="IN" />
+<RadioButton
+android:id="@+id/out"
+android:textColor="@color/TextRangi2"
+ android:textSize="20sp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="OUT" />
+
+</RadioGroup>
+           
+            </LinearLayout>
+          <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textSize="20sp"  android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Volume" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.29"></TextView>
+        <EditText android:layout_width="wrap_content" android:hint="Tonnes" android:layout_height="wrap_content" android:id="@+id/W_Maize_in_volume" android:inputType="numberDecimal" android:gravity="right" android:layout_weight="0.63">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>  
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textSize="20sp"  android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Whouse Name" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Whouse_name" android:hint="SMS Only" android:gravity="right" android:layout_weight="0.89">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    
+       
+    <LinearLayout android:weightSum="1" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout01" android:layout_width="match_parent" android:layout_height="32dp">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout02" android:layout_width="match_parent" android:layout_height="39dp">
+            <LinearLayout android:id="@+id/LinearLayout04" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+                <Button android:layout_width="60dp" android:text="Send" android:layout_height="wrap_content" android:id="@+id/btnNext" android:onClick="send" android:layout_weight="0.37"></Button>
+                <Button android:layout_width="60dp" android:layout_weight="0.11" android:text="Clear" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:id="@+id/btnClear" android:onClick="clear"></Button>
+                <Button android:layout_width="60dp" android:layout_weight="0.09" android:text="Exit" android:layout_height="wrap_content" android:id="@+id/btnExit" android:onClick="end"></Button>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+   
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_gravity="right" android:gravity="center" android:layout_height="wrap_content" android:layout_width="232dp">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="83dp">
+        </TableRow>
+    </RelativeLayout>
+    <RelativeLayout android:layout_weight="0.26" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout2">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_toRightOf="@+id/yCood" android:layout_marginLeft="28dp" android:layout_centerVertical="true" android:id="@+id/xCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_alignBaseline="@+id/xCood" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentLeft="true" android:id="@+id/yCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_alignBottom="@+id/xCood"></TextView>
+    </RelativeLayout>
+   
+</LinearLayout>

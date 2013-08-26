@@ -1,0 +1,25 @@
+<RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:fadingEdge="horizontal" android:background="@drawable/backgnd">
+      <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout" android:layout_height="wrap_content" android:layout_below="@+id/login" android:layout_alignLeft="@+id/relativeLayout2" android:layout_alignRight="@+id/username">
+          <TextView android:textColor="@color/TextRangi2" android:id="@+id/xd" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="X:" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"></TextView>
+          <TextView android:textColor="@color/TextRangi2" android:id="@+id/xCood" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_height="wrap_content"></TextView>
+          <Button android:onClick="end" android:text="Exit" android:typeface="sans" android:layout_height="50dp" android:textColor="@color/TextRangi2" android:id="@+id/btnExit" android:textSize="17sp" android:layout_width="60dp" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/xCood" android:layout_marginRight="25dp"></Button>
+      </RelativeLayout>
+      <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout" android:layout_height="wrap_content" android:layout_below="@+id/login" android:layout_marginTop="51dp" android:layout_alignLeft="@+id/check" android:layout_alignRight="@+id/username">
+          <TextView android:textColor="@color/TextRangi2" android:id="@+id/yCood"  android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"  android:layout_alignParentRight="true" android:layout_height="wrap_content"></TextView>
+      </RelativeLayout>
+      <CheckBox android:text="Remember me" android:textColor="@color/TextRangi2" android:typeface="serif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/check" android:layout_below="@+id/password" android:layout_alignLeft="@+id/password"></CheckBox>
+     
+      <EditText android:password="true" android:layout_height="wrap_content" android:typeface="sans" android:textSize="18sp" android:layout_width="211px" android:gravity="center" android:id="@+id/password" android:hint="password" android:layout_below="@+id/username" android:layout_alignRight="@+id/username" android:layout_alignLeft="@+id/username"></EditText>
+      <TextView android:textColor="@color/TextRangi2" android:typeface="sans" android:layout_height="wrap_content" android:gravity="center" android:text="Login to post  Border data" android:id="@+id/text" android:layout_width="wrap_content"  android:textSize="20sp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="14dp"></TextView>
+      <EditText  android:layout_height="wrap_content" android:typeface="sans" android:textSize="18sp" android:layout_width="213dip" android:gravity="center" android:id="@+id/username" android:hint="username" android:layout_below="@+id/text" android:layout_alignLeft="@+id/text">
+          <requestFocus></requestFocus>
+      </EditText>
+      <Button android:typeface="sans" android:text="Login"  android:layout_height="wrap_content" android:textColor="@color/TextRangi2" android:id="@+id/login" android:textSize="17sp" android:layout_width="141px" android:layout_below="@+id/check" android:layout_alignLeft="@+id/check" android:layout_alignRight="@+id/relativeLayout"></Button>
+      <TextView android:textColor="@color/TextRangi2" android:layout_height="wrap_content" android:text="Y:" android:id="@+id/yd" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_below="@+id/relativeLayout" android:layout_alignParentLeft="true" android:layout_marginTop="18dp"></TextView>
+      
+      
+ </RelativeLayout>

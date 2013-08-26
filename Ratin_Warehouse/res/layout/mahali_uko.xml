@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/txt" android:layout_width="wrap_content" android:text="Latitude" android:layout_height="35dp" android:layout_weight="0.21"></TextView>
+        <EditText android:id="@+id/yCood" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="0.74"></EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1" android:layout_height="49dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:layout_width="wrap_content" android:text="Longitude" android:layout_height="54dp" android:layout_weight="0.15"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/xCood" android:layout_weight="0.79"></EditText>
+    </LinearLayout>
+  
+<TextView
+    android:id="@+id/mytext"  
+    android:textSize="15pt"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+
+    
+</LinearLayout>

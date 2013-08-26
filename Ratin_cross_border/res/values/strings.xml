@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">RATIN</string>
+    <string name="app_name">RATIN_CB</string>
+    <color name="TextRangi3">#1942FF</color>
+    <color name="TextRangi2">#190B07</color>
+    <string name="maize">maize</string>
+    <string name="rice">rice</string>
+    <string name="beans">beans</string>
+    <string name="millet">millet</string>
+    <string name="wheat">wheat</string>
+</resources>

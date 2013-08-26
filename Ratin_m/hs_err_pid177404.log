@@ -1,0 +1,106 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=177404, tid=177416
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_25-b06
+# Java VM: Java HotSpot(TM) Client VM (20.0-b11 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0130a000):  JavaThread "Unknown thread" [_thread_in_vm, id=177416, stack(0x00330000,0x00380000)]
+
+Stack: [0x00330000,0x00380000],  sp=0x0037f86c,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x13363a]
+V  [jvm.dll+0x12e59b]
+V  [jvm.dll+0x164ce]
+V  [jvm.dll+0x17cff]
+V  [jvm.dll+0x26de5]
+V  [jvm.dll+0x27626]
+V  [jvm.dll+0x279d5]
+V  [jvm.dll+0x27a69]
+V  [jvm.dll+0x27b2c]
+V  [jvm.dll+0x27baa]
+V  [jvm.dll+0x27c8d]
+V  [jvm.dll+0x27f59]
+V  [jvm.dll+0x6c593]
+V  [jvm.dll+0x6c96c]
+V  [jvm.dll+0xf9c1c]
+V  [jvm.dll+0x1184bb]
+V  [jvm.dll+0x9eba0]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [kernel32.dll+0x51194]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x5b3f5]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x5b3c8]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0130a000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=177416, stack(0x00330000,0x00380000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x77740000 - 0x7787c000 	C:\windows\SYSTEM32\ntdll.dll
+0x76b40000 - 0x76c14000 	C:\windows\system32\kernel32.dll
+0x75af0000 - 0x75b3a000 	C:\windows\system32\KERNELBASE.dll
+0x77030000 - 0x770d0000 	C:\windows\system32\ADVAPI32.dll
+0x772a0000 - 0x7734c000 	C:\windows\system32\msvcrt.dll
+0x771d0000 - 0x771e9000 	C:\windows\SYSTEM32\sechost.dll
+0x77350000 - 0x773f1000 	C:\windows\system32\RPCRT4.dll
+0x77400000 - 0x774c9000 	C:\windows\system32\USER32.dll
+0x77250000 - 0x7729e000 	C:\windows\system32\GDI32.dll
+0x76c20000 - 0x76c2a000 	C:\windows\system32\LPK.dll
+0x76880000 - 0x7691d000 	C:\windows\system32\USP10.dll
+0x76920000 - 0x7693f000 	C:\windows\system32\IMM32.DLL
+0x77670000 - 0x7773c000 	C:\windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d7f0000 - 0x6da9f000 	C:\Program Files\Java\jre6\bin\client\jvm.dll
+0x73f80000 - 0x73fb2000 	C:\windows\system32\WINMM.dll
+0x757c0000 - 0x7580b000 	C:\windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Program Files\Java\jre6\bin\java.dll
+0x77930000 - 0x77935000 	C:\windows\system32\PSAPI.DLL
+0x6d7e0000 - 0x6d7ef000 	C:\Program Files\Java\jre6\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dvce.launchers=org.eclipse.ve.internal.java.vce.launcher.remotevm.JFCLauncher -Dvce.launcher.class=sabwa.jah.Tdbase -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\accadius\Desktop\android-sdk\platforms\android-8\android.jar 
+java_command: org.eclipse.ve.internal.java.vce.launcher.remotevm.JavaBeansLauncher
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_25
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:/Program Files/Java/jre6/lib/i386;C:\Program Files\CollabNet\Subversion Server;ommonProgramFiles\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Common Files\Roxio Shared\DLLShared\;c:\Program Files\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files\ActivIdentity\ActivClient\;c:\Program Files\Hewlett-Packard\Drive Encryption\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Java\jdk1.6.0_25\bin;C:\jboss-4.2.2.GA\bin;C:\Program Files\apache-ant-1.7.1\bin;C:\Users\accadius\Desktop\eclipse;
+USERNAME=accadius
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 1949112k(265788k free), swap 5103300k(868584k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.0-b11) for windows-x86 JRE (1.6.0_25-b06), built on Apr 14 2011 01:04:32 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Sat Mar 24 13:34:59 2012
+elapsed time: 0 seconds
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"  
+    android:background="@drawable/backgnd">
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+ <TextView  android:textColor="@color/TextRangi2" android:id="@+id/text" android:layout_width="wrap_content" android:typeface="sans" android:layout_height="wrap_content" android:textSize="20sp" android:text="Import/Export Data" android:layout_below="@+id/linearLayout5" android:layout_alignParentLeft="true" android:layout_marginTop="10dp" android:layout_weight="0.39"></TextView>
+ </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.14"></LinearLayout>
+     <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+     <TextView android:id="@+id/TextView03" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Grain" android:textSize="20sp" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_weight="0.51"></TextView>
+     <Spinner android:id="@+id/spinner_grain" android:layout_gravity="right" android:layout_width="139dp" android:layout_height="wrap_content" android:layout_weight="0.23"></Spinner>
+    </LinearLayout>
+       <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+            </LinearLayout>
+           
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textSize="20sp" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="From" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_height="match_parent" android:layout_weight="0.50"></TextView>
+        <Spinner android:id="@+id/source_country" android:layout_gravity="right" android:layout_width="139dp" android:layout_height="wrap_content" android:layout_weight="0.27"></Spinner>
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="To" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.59"></TextView>
+        <Spinner android:layout_height="wrap_content" android:layout_width="139dp" android:id="@+id/dest_country" android:layout_gravity="right" android:layout_weight="0.21"></Spinner>
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+    </LinearLayout>
+    
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:textSize="20sp" android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Volume" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.21"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/volume" android:inputType="numberDecimal" android:gravity="right" android:layout_weight="0.65">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    
+    
+    
+    
+    <LinearLayout android:weightSum="1" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06" android:id="@+id/LinearLayout04">
+                <TextView android:textColor="@color/TextRangi2" android:layout_height="47dp" android:text="Border Name " android:id="@+id/TextView01" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content"></TextView>
+                <EditText  android:layout_height="wrap_content" android:hint="SMS Only" android:gravity="right" android:id="@+id/b_name"  android:layout_width="wrap_content" android:layout_gravity="right" android:layout_weight="0.60"></EditText>
+            </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <Button android:onClick="send" android:text="Send" android:layout_height="wrap_content" android:id="@+id/btnNext" android:layout_width="60dp"></Button>
+        <Button android:onClick="clear" android:text="Clear" android:layout_height="50dp" android:id="@+id/btnClear" android:layout_width="60dp" android:layout_marginLeft="28dp"></Button>
+        
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout02" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_weight="0.71" android:onClick="end" android:text="Exit" android:id="@+id/btnExit" android:layout_width="60dp" android:layout_height="50dp"></Button>
+            
+        </LinearLayout>
+    </LinearLayout>
+   
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_gravity="right" android:gravity="center" android:layout_width="333dp" android:layout_height="wrap_content">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="83dp">
+        </TableRow>
+    </RelativeLayout>
+    <RelativeLayout android:layout_weight="0.26" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout2">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_toRightOf="@+id/yCood" android:layout_marginLeft="28dp" android:layout_centerVertical="true" android:id="@+id/xCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_alignBaseline="@+id/xCood" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentLeft="true" android:id="@+id/yCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_alignBottom="@+id/xCood"></TextView>
+    </RelativeLayout>
+   
+</LinearLayout>

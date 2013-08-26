@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" android:background="@drawable/backgnd">
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.11"></LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center" android:text="Farmer Registration" android:textColor="@color/TextRangi2" android:textSize="20sp" android:layout_weight="0.03"></TextView>
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:id="@+id/TextView03" android:textSize="17sp" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="  Name" android:textColor="@color/TextRangi2" android:fadeScrollbars="true" android:freezesText="true" android:layout_height="match_parent" android:layout_weight="0.23"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="text" android:id="@+id/jina"  android:gravity="right" android:layout_weight="0.56">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:weightSum="1" android:layout_height="43dp">
+        <TextView android:id="@+id/textView1" android:textSize="17sp" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"  android:text="  Farm Size" android:layout_height="47dp" android:textColor="@color/TextRangi2" android:layout_weight="0.16"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/size" android:inputType="numberDecimal" android:numeric="integer" android:layout_gravity="right" android:gravity="right" android:layout_weight="0.65">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout01" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/TextView01" android:textSize="17sp" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge"  android:text="  Crop" android:textColor="@color/TextRangi2" android:layout_weight="0.50"></TextView>
+            <Spinner android:layout_width="139dp" android:layout_gravity="right" android:id="@+id/spinner_grain" android:layout_height="wrap_content" android:layout_weight="0.20"></Spinner>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout02" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/TextView02" android:textSize="17sp" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="  Phone" android:textColor="@color/TextRangi2" android:layout_weight="0.27"></TextView>
+            <EditText android:layout_width="wrap_content"  android:layout_height="wrap_content" android:id="@+id/mahali" android:gravity="right" android:layout_weight="0.56"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+    
+     <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.15">
+         <TextView android:id="@+id/xCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_toRightOf="@+id/yCood" android:layout_marginLeft="28dp"></TextView>
+         <TextView android:id="@+id/yCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:text="" android:layout_alignBaseline="@+id/xCood" android:layout_alignBottom="@+id/xCood" android:layout_alignParentLeft="true"></TextView>
+          </RelativeLayout>
+   
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_gravity="right" android:layout_height="48dp" android:gravity="center" android:layout_width="333dp">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="83dp">
+        </TableRow>
+        <Button android:onClick="clear" android:layout_height="50dp" android:id="@+id/btnClear" android:layout_width="60dp" android:text="Clear" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnNext" android:layout_marginLeft="28dp"></Button>
+        <Button android:onClick="end" android:layout_height="50dp" android:id="@+id/btnExit" android:layout_width="60dp" android:text="Exit" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnClear"></Button>
+        <Button android:onClick="send" android:layout_height="50dp" android:id="@+id/btnNext" android:layout_width="60dp" android:text="Send" android:layout_alignParentTop="true" android:layout_alignRight="@+id/tableRow1" android:layout_marginRight="14dp"></Button>
+    </RelativeLayout>
+   
+</LinearLayout>

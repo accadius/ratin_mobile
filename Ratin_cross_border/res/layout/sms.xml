@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" android:background="@drawable/backgnd">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout2" android:layout_weight="0.25">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_toRightOf="@+id/yCood" android:layout_marginLeft="28dp" android:layout_centerVertical="true" android:id="@+id/xCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_alignBaseline="@+id/xCood" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentLeft="true" android:id="@+id/yCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_alignBottom="@+id/xCood"></TextView>
+    </RelativeLayout>
+     <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="wrap_content">
+      <TextView android:text="select grain" android:textColor="@color/TextRangi2" android:layout_height="47dp" android:freezesText="true"  android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_weight="0.18" android:id="@+id/TextView02" android:fadeScrollbars="true"></TextView>
+    <Spinner android:layout_width="139dp" android:layout_gravity="right" android:id="@+id/spinner_grain" android:layout_height="wrap_content" android:layout_weight="0.26"></Spinner>
+    
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Source C"  android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.23"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/source_c"  android:gravity="right" android:layout_weight="0.72">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" android:layout_weight="0.06">
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout01" android:layout_width="match_parent" android:layout_height="62dp">
+            <TextView android:id="@+id/TextView01" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge"  android:text="Dest C"  android:layout_weight="0.28"></TextView>
+            <EditText android:layout_width="wrap_content"   android:layout_height="wrap_content" android:id="@+id/dest_c" android:gravity="right" android:layout_weight="0.66"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout4" android:layout_width="match_parent" android:weightSum="1" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/LinearLayout04" android:layout_width="match_parent" android:layout_weight="0.06" android:weightSum="1" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_weight="0.23" android:text="Volume" android:layout_height="47dp" android:id="@+id/TextView04" android:textColor="@color/TextRangi2" android:freezesText="true" android:fadeScrollbars="true"></TextView>
+            <EditText android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/volume" android:gravity="right" android:layout_width="130dp"></EditText>
+        </LinearLayout>
+        <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout02" android:layout_width="match_parent" android:layout_height="61dp">
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Source P"  android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.23"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/source_p"  android:gravity="right" android:layout_weight="0.72">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:weightSum="1" android:id="@+id/LinearLayout03" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.06">
+        <TextView android:id="@+id/TextView03" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_height="47dp" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Dest P"  android:fadeScrollbars="true" android:freezesText="true" android:layout_weight="0.23"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dest_p"  android:gravity="right" android:layout_weight="0.72">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_gravity="right" android:layout_height="48dp" android:gravity="center" android:layout_width="333dp">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="83dp">
+        </TableRow>
+        <Button android:onClick="clear" android:layout_height="50dp" android:id="@+id/btnClear" android:layout_width="60dp" android:text="Clear" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnNext" android:layout_marginLeft="28dp"></Button>
+        <Button android:onClick="end" android:layout_height="50dp" android:id="@+id/btnExit" android:layout_width="60dp" android:text="Back" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/btnClear"></Button>
+        <Button android:layout_height="wrap_content" android:onClick="send" android:text="Send" android:layout_width="60dp" android:id="@+id/btnNext" android:layout_alignParentTop="true"></Button>
+    </RelativeLayout>
+    <RelativeLayout android:layout_weight="0.26" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout2">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_toRightOf="@+id/yCood" android:layout_marginLeft="28dp" android:layout_centerVertical="true" android:id="@+id/xCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content"></TextView>
+        <TextView android:layout_alignBaseline="@+id/xCood" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentLeft="true" android:id="@+id/yCood" android:textColor="@color/TextRangi2" android:layout_width="wrap_content" android:layout_alignBottom="@+id/xCood"></TextView>
+    </RelativeLayout>
+   
+</LinearLayout>
